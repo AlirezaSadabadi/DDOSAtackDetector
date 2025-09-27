@@ -86,8 +86,6 @@ For questions, academic collaboration, or feedback:
 
 * **Author:** \[Alireza Sadabadi]
 * **Email:** [AlirezaSadabady@gmail.com](mailto:AlirezaSadabady@gmail.com)
-* **LinkedIn / Website (optional)** [www.linkedin.com/in/alireza-sadabadi]
+* **LinkedIn** [www.linkedin.com/in/alireza-sadabadi]
 
 ---
-
-```
