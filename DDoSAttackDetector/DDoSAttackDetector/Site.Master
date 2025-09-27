@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DDoSAttackDetector.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>سیستم تشخیص حملات انکارسرویس توزیع‌شده</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/General.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootbox.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+
+            $('input,textarea').focus(function () {
+                $(this).css('background-color', '#f0feff')
+                $(this).css('border-color', '#008aff')
+                $(this).css('border-style', 'Solid')
+                $(this).css('border-width', '1px')
+            }).blur(function () {
+                $(this).css('background-color', '')
+                $(this).css('border-color', '')
+                $(this).css('border-style', '')
+                $(this).css('border-width', '')
+            });
+
+        });
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body dir="rtl">
+    <form id="form1" runat="server" dir="rtl">
+        <div class="masetrBackGround">
+            <div class="container">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+                    <div class="navbar-header pull-right">
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#UserControlNavbar_collapse">
+
+                            <span class="sr-only">ناوبری</span>
+
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="Detector.aspx">صفحه اصلی</a></li>
+                            <li><a href="Approve.aspx">تایید تشخیص</a></li>
+                            <li><a href="Learning.aspx">آموزش سیستم</a></li>
+
+
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">جدول ها<span class="caret"></span></a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="CPT.aspx">جدول احتمالات شرطی</a></li>
+
+                                    <li><a href="PPT.aspx">جدول احتمالات پیشین</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            <li><a href="Fact.aspx">حقایق</a></li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+                <div class="row title">
+                    <span>سیستم تشخیص حملات انکارسرویس توزیع‌شده</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" ClientIDMode="Static">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

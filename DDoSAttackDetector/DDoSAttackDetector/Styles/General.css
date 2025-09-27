@@ -1,0 +1,76 @@
+﻿html, body, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'NazaninWebFont';
+    font-size: 16px;
+}
+
+.masetrBackGround {
+ background: rgba(232,235,250,1);
+background: -moz-linear-gradient(top, rgba(232,235,250,1) 0%, rgba(235,250,250,1) 28%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(232,235,250,1)), color-stop(28%, rgba(235,250,250,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(232,235,250,1) 0%, rgba(235,250,250,1) 28%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(232,235,250,1) 0%, rgba(235,250,250,1) 28%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(232,235,250,1) 0%, rgba(235,250,250,1) 28%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(232,235,250,1) 0%, rgba(235,250,250,1) 28%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ebfa', endColorstr='#ffffff', GradientType=0 );
+
+
+    height:100%;
+}
+
+.contentBackground{
+background-color:rgba(247, 247, 247, 0.42);
+
+    border-radius: 30px 10px 30px 10px;
+-moz-border-radius: 30px 10px 30px 10px;
+-webkit-border-radius: 30px 10px 30px 10px;
+border: 0.5px solid rgba(16, 150, 238, 0.11);
+
+-webkit-box-shadow: -8px 7px 5px -6px rgba(0,0,0,0.13);
+-moz-box-shadow: -8px 7px 5px -6px rgba(0,0,0,0.13);
+box-shadow: -8px 7px 5px -6px rgba(0,0,0,0.13);
+height:100%;
+padding-top:5px;
+padding-right: 15px;
+padding-left: 15px;
+padding-bottom:20px;
+margin-bottom:40px;
+}
+
+.buttonDiv{
+    float:left;
+}
+
+.title {
+    color: mediumpurple;
+    font-family: TabassomWebFont;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+@font-face {
+    font-family: 'NazaninWebFont';
+    src: url('../fonts/irnazanin-webfont.eot?#') format('eot');
+    src: url('../fonts/irnazanin-webfont.woff') format('woff');
+    src: url('../fonts/IRNazanin.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'TabassomWebFont';
+    src: url('../fonts/irtabassom-webfont.eot?#') format('eot');
+    src: url('../fonts/irtabassom-webfont.woff') format('woff');
+    src: url('../fonts/IRTabassom.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TabassomWebFont';
+    src: url('../fonts/irtitr-webfont.eot?#') format('eot');
+    src: url('../fonts/irtitr-webfont.woff') format('woff');
+    src: url('../fonts/irtitr-webfont.ttf') format('truetype');
+}
